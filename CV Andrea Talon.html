@@ -34,9 +34,10 @@
 
     .subpage {
       width: 19cm;
-      height: 27.7cm;
+      height: 28cm;
       margin: 0 1cm;
       display: flex;
+      flex-direction: row-reverse;
     }
 
     .box-green {
@@ -65,7 +66,7 @@
       font-size: 1.1em;
       font-weight: bold;
       color: white;
-      margin: 1cm 0 0.2cm;
+      margin: 0.3cm 0 0.2cm;
     }
 
     .skills dd {
@@ -79,7 +80,7 @@
       height: 0.25cm;
       background-color: black;
       border: 1px solid white;
-      margin-top: 0.2cm;
+      margin: 0.2cm 0 0.8cm;
     }
 
     .evaluation span {
@@ -109,7 +110,7 @@
       align-items: baseline;
       align-content: baseline;
       justify-content: space-between;
-      margin: 1cm 0 0.2cm -4.8cm;
+      margin: 1cm 0 0.4cm -4.8cm;
       z-index: 1;
     }
 
@@ -125,7 +126,7 @@
 
     .head h2 {
       text-transform: uppercase;
-      font-size: 1cm;
+      font-size: 0.9cm;
     }
 
     .data {}
@@ -136,7 +137,7 @@
     }
 
     .data dl {
-      margin-bottom: 0.5cm;
+      margin-bottom: 0.3cm;
     }
 
     .data dt {
@@ -188,19 +189,15 @@
       float: right;
     }
 
-    .disclaimer {
-      font-size: 1.4em;
-      font-weight: bold;
-      display: none;
-    }
-
-    .disclaimer span {
-      font-size: .8em;
-      font-weight: normal;
+    .summary {
+      padding-left: 0.5cm;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.9em;
+      color: black;
     }
 
     .contacts {
-      margin: 3.7cm 0 0;
+      margin: 3.4cm 0 0;
       padding: 0 0.2cm;
       color: white;
       font-size: 0.9em;
@@ -217,7 +214,7 @@
     .privacy {
       font-size: 0.65em;
       text-align: center;
-      margin-top: 0.8cm;
+      margin-top: 0.65cm;
     }
 
     @page {
@@ -248,68 +245,14 @@
 <body>
   <div class="page">
     <div class="subpage">
-      <div class="box-green">
-        <div class="contacts">
-          <h3>Contacts</h3>
-          <ul>
-            <li><strong>Email:</strong> <a target="_blank" href="mailto:">&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;</a>
-            </li>
-            <li><strong>Phone:</strong> <a target="_blank" href="tel:">&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;</a></li>
-            <li><strong>LinkedIn:</strong> <a target="_blank" href="https://www.linkedin.com/in/andreatalon/">/in/andreatalon/</a></li>
-          </ul>
-        </div>
-        <div class="skills">
-          <h3>Skills</h3>
-          <dl>
-            <dt>JavaScript</dt>
-            <dd>
-              <strong>React</strong>, <strong>Node.js</strong>, 
-              <strong>TypeScript</strong>, <strong>RxJS</strong>, AngularJS, JQuery, Vue.js
-              <span class="evaluation e6"><span></span></span>
-            </dd>
-            <dt>Coding &amp; Frameworks</dt>
-            <dd>
-              <strong>Docker</strong>, 
-              <strong>AWS</strong>, 
-              <strong>GCP</strong>, <strong>PHP</strong>, <strong>MySQL</strong>, <strong>Git</strong>, 
-              <strong>Java</strong>,  Go, Serverless, VSCode, SAP Commerce Cloud (Hybris), Cordova, Appcelerator, Xamarin,
-              ActionScript, Shopify, Objective-C, PostgreSQL
-              <span class="evaluation e5"><span></span></span>
-            </dd>
-            <dt>Design &amp; Methodologies</dt>
-            <dd>
-              <strong>DDD</strong>, <strong>CQRS</strong>, CI/CD, OOP, Pair Programming, Scrum, Kanban
-              <span class="evaluation e4"><span></span></span>
-            </dd>
-            <dt>Illustration &amp; Drawing</dt>
-            <dd>
-              <strong>Pencil</strong>, <strong>Photoshop</strong>, Illustrator, Flash
-              <span class="evaluation e5"><span></span></span>
-            </dd>
-            <dt>Soft Skills</dt>
-            <dd>
-              <strong>Problem Solving</strong>, <strong>Team Working</strong>, Analysis, Time/Cost Estimates
-              <span class="evaluation e6"><span></span></span>
-            </dd>
-            <dt>Languages</dt>
-            <dd>
-              <strong>Italian</strong>, English
-              <span class="evaluation e3"><span></span></span>
-            </dd>
-          </dl>
-        </div>
-      </div>
       <div class="box-white">
         <div class="head">
           <h1><span>Andrea</span> Talon</h1>
-          <h2>Software Developer</h2>
+          <h2>Software Professional</h2>
           <div class="line"></div>
         </div>
-        <div class="disclaimer">
-          <p>15+ years experience<br>
-            <span>in</span><br>Consulting, Digital Transformation,<br>
-            UI, Mobile and Full Stack development.
-          </p>
+        <div class="summary">
+          <p>Experienced software professional with a strong corporate background, driving development, consulting and management across digital transformation, cloud, UI and mobile environments.</p>
         </div>
         <div class="data">
           <div class="experience">
@@ -317,8 +260,8 @@
             <dl>
               <dt>De'Longhi Group</dt>
               <dd><strong>Ecommerce Developer</strong> (Jun 2021 - now)<br>
-                <i>Analyst, full stack developer for ecommerce platform.</i><br>
-                <span>[SAP Commerce Cloud, Java, Reactjs]</span>
+                <i>Team and technical leader, analyst, developer for ecommerce platform.</i><br>
+                <span>[Salesforce, React, Node.js, SAP Commerce Cloud, Java]</span>
               </dd>
             </dl>
             <dl>
@@ -330,7 +273,7 @@
               <dd><strong>ERP Developer</strong> (Jun 2016 - Oct 2020)<br>
                 <i>Analyst, architect, full stack developer; UI specialist.<br>
                 Working in a smart team dedicated to create, update and mantain proprietary software in agile way.</i><br>
-                <span>[Reactjs, Vuejs, PHP, Laravel, Symfony, MySQL, Docker, Go, AWS]</span>
+                <span>[React, Vue, PHP, Laravel, Symfony, MySQL, Docker, Go, AWS]</span>
               </dd>
             </dl>
             <dl>
@@ -408,6 +351,53 @@
               <dd>Tre Comuni Association</dd>
             </dl>
           </div>
+        </div>
+      </div>
+      <div class="box-green">
+        <div class="contacts">
+          <h3>Contacts</h3>
+          <ul>
+            <li><strong>Email:</strong> <a target="_blank" href="mailto:">&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;</a>
+            </li>
+            <li><strong>Phone:</strong> <a target="_blank" href="tel:">&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;</a></li>
+            <li><strong>LinkedIn:</strong> <a target="_blank" href="https://www.linkedin.com/in/andreatalon/">/in/andreatalon/</a></li>
+          </ul>
+        </div>
+        <div class="skills">
+          <h3>Skills</h3>
+          <dl>
+            <dt>JavaScript</dt>
+            <dd>
+              <strong>React</strong>, <strong>Node.js</strong>, <strong>TypeScript</strong>,<strong>RxJS</strong>, AngularJS, JQuery, Vue
+              <span class="evaluation e6"><span></span></span>
+            </dd>
+            <dt>Coding &amp; Frameworks</dt>
+            <dd>
+              <strong>Docker</strong>, <strong>AWS</strong>, <strong>GCP</strong>, <strong>PHP</strong>, <strong>MySQL</strong>, <strong>Git</strong>, <strong>Java</strong>, Go, Serverless, VSCode, SAP Commerce Cloud (Hybris), Salesforce, Cordova, Appcelerator, Xamarin,
+              ActionScript, Shopify, Objective-C, PostgreSQL
+              <span class="evaluation e5"><span></span></span>
+            </dd>
+            <dt>Design &amp; Methodologies</dt>
+            <dd>
+              <strong>DDD</strong>, CQRS, CI/CD, OOP, Pair Programming, Scrum, Kanban
+              <span class="evaluation e4"><span></span></span>
+            </dd>
+            <dt>Illustration &amp; Drawing</dt>
+            <dd>
+              <strong>Pencil</strong>, <strong>Photoshop</strong>, Illustrator, Flash
+              <span class="evaluation e5"><span></span></span>
+            </dd>
+            <dt>Soft Skills</dt>
+            <dd>
+              <strong>Problem Solving</strong>, <strong>Team Working</strong>, Analysis, Time/Cost Estimates
+              <span class="evaluation e6"><span></span></span>
+            </dd>
+            <dt>Languages</dt>
+            <dd>
+              <strong>Italian</strong>, English
+              <span class="evaluation e4"><span></span></span>
+            </dd>
+          </dl>
         </div>
       </div>
     </div>
