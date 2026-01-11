@@ -4,11 +4,19 @@
 <head>
   <title>CV Andrea Talon</title>
   <style media="all">
+    /* * {
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    } */
+
     body {
       margin: 0;
       padding: 0;
       background-color: white;
-      font-family: "Arial Narrow", sans-serif;
+      font-family: "Calibri", Arial, Helvetica, sans-serif;
+      /* font-size: 0.85em; */
       color: darkslategrey;
     }
 
@@ -16,204 +24,32 @@
       color: inherit;
     }
 
-    * {
-      box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+    h1 {
+      color: #008080;
+    }
+
+    .h {
+      display: none;
     }
 
     .page {
-      position: relative;
-      width: 21cm;
-      min-height: 29.7cm;
+      width: 19cm;
+      min-height: 27.7cm;
       margin: 1cm auto;
+      padding: 1cm;
       border: 1px lightgrey solid;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     }
 
-    .subpage {
-      width: 19cm;
-      height: 28cm;
-      margin: 0 1cm;
-      display: flex;
-      flex-direction: row-reverse;
-    }
-
-    .box-green {
-      width: 5cm;
-      background: rgba(0, 128, 128, 0.7); /* #008080 */
-    }
-
-    .box-white {
-      width: 14cm;
-      background: white;
-    }
-
-    .line::before {
-      content: ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>";
-    }
-
-    .skills {
-      padding: 0.2cm;
-    }
-
-    .skills h3 {
-      display: none;
-    }
-
-    .skills dt {
-      font-size: 1.1em;
-      font-weight: bold;
-      color: white;
-      margin: 0.3cm 0 0.2cm;
-    }
-
-    .skills dd {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 0.8em;
-      color: black;
-    }
-
-    .evaluation {
-      display: flex;
-      height: 0.25cm;
-      background-color: black;
-      border: 1px solid white;
-      margin: 0.2cm 0 0.8cm;
-    }
-
-    .evaluation span {
-      background-color: white;
-      height: 0.25cm;
-    }
-
-    .evaluation.e3 span {
-      width: 50%;
-    }
-
-    .evaluation.e4 span {
-      width: 66%;
-    }
-
-    .evaluation.e5 span {
-      width: 82%;
-    }
-
-    .evaluation.e6 span {
-      width: 100%;
-    }
-
-    .head {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: baseline;
-      align-content: baseline;
-      justify-content: space-between;
-      margin: 1cm 0 0.4cm -4.8cm;
-      z-index: 1;
-    }
-
-    .head h1 {
-      text-transform: uppercase;
-      color: #008080;
-      font-size: 1.3cm;
-    }
-
-    .head h1 span {
-      color: white;
-    }
-
-    .head h2 {
-      text-transform: uppercase;
-      font-size: 0.9cm;
-    }
-
-    .data {}
-
-    .data h3 {
-      margin-top: 0.5cm;
-      color: black;
-    }
-
-    .data dl {
-      margin-bottom: 0.3cm;
-    }
-
-    .data dt {
-      font-weight: bold;
-      font-size: 1.1em;
-      margin: 0.5cm 0 0.2cm;
-    }
-
-    .data dd {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 0.9em;
-      margin-bottom: 0.2cm;
-    }
-
-    .data dd strong {
-      display: inline-block;
-      margin-top: 0.2cm;
-    }
-
-    .data dd i {
-      display: inline-block;
-      font-size: 0.9em;
-      font-style: normal;
-      margin: 0.1cm 0 0;
-    }
-
-    .data dd span {
-      /* display: none; */
-      font-size: 0.7em;
-      font-weight: bold;
-    }
-
-    .experience {
-      float: left;
-      width: 9cm;
-      padding: 0 0.5cm;
-    }
-
-    /* .experience h3 {
-      display: none;
-    } */
-
-    .education,
-    .certifications,
-    .awards,
-    .volunteering {
-      width: 5cm;
-      clear: right;
-      float: right;
-    }
-
-    .summary {
-      padding-left: 0.5cm;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 0.9em;
-      color: black;
-    }
-
-    .contacts {
-      margin: 3.4cm 0 0;
-      padding: 0 0.2cm;
-      color: white;
-      font-size: 0.9em;
-    }
-
-    .contacts h3 {
-      display: none;
-    }
-
-    .contacts ul {
+    ul.contacts {
       list-style-type: none;
+      display: flex;
+      padding-left: 0;
+      gap: 0.5cm;
     }
 
     .privacy {
       font-size: 0.65em;
-      text-align: center;
       margin-top: 0.65cm;
     }
 
@@ -245,165 +81,125 @@
 <body>
   <div class="page">
     <div class="subpage">
-      <div class="box-white">
-        <div class="head">
-          <h1><span>Andrea</span> Talon</h1>
-          <h2>Software Professional</h2>
-          <div class="line"></div>
-        </div>
-        <div class="summary">
-          <p>Experienced software professional with a strong corporate background, driving development, consulting and management across digital transformation, cloud, UI and mobile environments.</p>
-        </div>
-        <div class="data">
-          <div class="experience">
-            <h3>Experience</h3>
-            <dl>
-              <dt>De'Longhi Group</dt>
-              <dd><strong>Ecommerce Developer</strong> (Jun 2021 - now)<br>
-                <i>Team and technical leader, analyst, developer for ecommerce platform.</i><br>
-                <span>[Salesforce, React, Node.js, SAP Commerce Cloud, Java]</span>
-              </dd>
-            </dl>
-            <dl>
-              <dt>Pixartprinting (Cimpress)</dt>
-              <dd><strong>Software Developer</strong> @ Packstyle (Oct 2020 - May 2021)<br>
-                <i>Analyst, full stack developer for ecommerce and manufacturing platforms.</i><br>
-                <span>[Shopify, TypeScript, PostgreSQL, AWS, DDD, CQRS, CD]</span>
-              </dd>
-              <dd><strong>ERP Developer</strong> (Jun 2016 - Oct 2020)<br>
-                <i>Analyst, architect, full stack developer; UI specialist.<br>
-                Working in a smart team dedicated to create, update and mantain proprietary software in agile way.</i><br>
-                <span>[React, Vue, PHP, Laravel, Symfony, MySQL, Docker, Go, AWS]</span>
-              </dd>
-            </dl>
-            <dl>
-              <dt>NTT Data</dt>
-              <dd><strong>Creative Technologist</strong> @ Digital Entity (Mar 2014 - Jun 2016)<br>
-                <i>Solution architect for mobile & front end projects, like smartphone app for ecommerce and offline document management.</i><br>
-                <span>[iOS, Objective-C, Cordova, Appcelerator, Xamarin, AngularJS]</span>
-              </dd>
-              <dd><strong>Consultant, Mobile / Front End Developer</strong> (Jun 2008 - Mar 2014)<br>
-                <i>Consultant and developer for telco, finance, manufacturing and ecommerce projects.</i><br>
-                <span>[Flash, ActionScript, HTML, CSS, JavaScript, JQuery, JSP, ASP, iOS, Objective-C]</span>
-              </dd>
-            </dl>
-            <dl>
-              <dt>Graphic Designer, Webmaster (freelance)</dt>
-              <dd>Sound Beach, SS14 <span>[...]</span> (Sep 2003 - Aug 2010)<br>
-                <i>Flyers, logos, CD covers, websites designer.</i><br>
-                <span>[Photoshop, Illustrator, Flash, HTML, CSS, JavaScript, PHP, MySQL]</span>
-              </dd>
-            </dl>
-            <dl>
-              <dt>Waiter, Cook, Bartender (seasonal)</dt>
-              <dd>Ristorante Cucumangi, Chiosco Oriente, Chiosco Ancora, Osteria Pavan (Apr 1999 - Jan 2008)</dd>
-            </dl>
-          </div>
-          <div class="education">
-            <h3>Education</h3>
-            <dl>
-              <dt>Computer Science,<br>Università Ca’ Foscari</dt>
-              <dd>Bachelor’s Degree</dd>
-            </dl>
-            <dl>
-              <dt>Liceo Scientifico G.Galilei</dt>
-              <dd>High School Diploma</dd>
-            </dl>
-          </div>
-          <div class="certifications">
-            <h3>Certifications</h3>
-            <dl>
-              <dt>PSM I</dt>
-              <dd><a target="_blank"
-                  href="https://www.scrum.org/certification-list?AssessmentName=PSM%20I&l=Talon">Scrum.org</a></dd>
-            </dl>
-            <dl>
-              <dt>CodeJam Workshop - Full Stack Development on the bleeding edge</dt>
-              <dd><a target="_blank"
-                  href="https://www.dropbox.com/sh/ehdsydkogygcbk5/AACtnsPyQxaCoYUxE-90ePwVa?dl=0&preview=Andrea+Talon.pdf">Avanscoperta</a>
-              </dd>
-            </dl>
-            <dl>
-              <dt>Speexx English CEFR Level B2.1</dt>
-              <dd><a target="_blank"
-                  href="https://portal.speexx.com/certificate/NjgxODk2Mjo6ODE=">Speexx</a>
-              </dd>
-            </dl>
-          </div>
-          <div class="awards">
-            <h3>Awards</h3>
-            <dl>
-              <dt>Mob App Award Finalist</dt>
-              <dd>SMAU Milan 2012<br>
-                App Chiesi Farmaceutici,<br>
-                in &quot;BI e Altre App Innovative&quot;</dd>
-            </dl>
-            <dl>
-              <dt>Merit Award Project</dt>
-              <dd>NTT Data Global Hackathon 2014<br>
-                Shop247, an &quot;in store&quot; and &quot;out store&quot; experience in mobile commerce.</dd>
-            </dl>
-          </div>
-          <div class="volunteering">
-            <h3>Volunteering</h3>
-            <dl>
-              <dt>Children animator</dt>
-              <dd>Tre Comuni Association</dd>
-            </dl>
-          </div>
-        </div>
-      </div>
-      <div class="box-green">
-        <div class="contacts">
-          <h3>Contacts</h3>
-          <ul>
-            <li><strong>Email:</strong> <a target="_blank" href="mailto:">&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;</a>
-            </li>
-            <li><strong>Phone:</strong> <a target="_blank" href="tel:">&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;</a></li>
-            <li><strong>LinkedIn:</strong> <a target="_blank" href="https://www.linkedin.com/in/andreatalon/">/in/andreatalon/</a></li>
-          </ul>
-        </div>
-        <div class="skills">
-          <h3>Skills</h3>
-          <dl>
-            <dt>JavaScript</dt>
-            <dd>
-              <strong>React</strong>, <strong>Node.js</strong>, <strong>TypeScript</strong>,<strong>RxJS</strong>, AngularJS, JQuery, Vue
-              <span class="evaluation e6"><span></span></span>
-            </dd>
-            <dt>Coding &amp; Frameworks</dt>
-            <dd>
-              <strong>Docker</strong>, <strong>AWS</strong>, <strong>GCP</strong>, <strong>PHP</strong>, <strong>MySQL</strong>, <strong>Git</strong>, <strong>Java</strong>, Go, Serverless, VSCode, SAP Commerce Cloud (Hybris), Salesforce, Cordova, Appcelerator, Xamarin,
-              ActionScript, Shopify, Objective-C, PostgreSQL
-              <span class="evaluation e5"><span></span></span>
-            </dd>
-            <dt>Design &amp; Methodologies</dt>
-            <dd>
-              <strong>DDD</strong>, CQRS, CI/CD, OOP, Pair Programming, Scrum, Kanban
-              <span class="evaluation e4"><span></span></span>
-            </dd>
-            <dt>Illustration &amp; Drawing</dt>
-            <dd>
-              <strong>Pencil</strong>, <strong>Photoshop</strong>, Illustrator, Flash
-              <span class="evaluation e5"><span></span></span>
-            </dd>
-            <dt>Soft Skills</dt>
-            <dd>
-              <strong>Problem Solving</strong>, <strong>Team Working</strong>, Analysis, Time/Cost Estimates
-              <span class="evaluation e6"><span></span></span>
-            </dd>
-            <dt>Languages</dt>
-            <dd>
-              <strong>Italian</strong>, English
-              <span class="evaluation e4"><span></span></span>
-            </dd>
-          </dl>
-        </div>
-      </div>
+
+      <h1>Andrea Talon</h1>
+
+      <h2 class="h">Contacts</h2>
+
+      <ul class="contacts">
+        <li><span class="h">Email:</span>
+          &bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;
+        </li>
+        <li><span class="h">Phone:</span>
+          &bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;
+        </li>
+        <li><span class="h">LinkedIn:</span> https://www.linkedin.com/in/andreatalon/</li>
+      </ul>
+
+      <h2>Professional Summary</h2>
+
+      </p>Senior Software Engineer with 15+ years of expertise in full-stack development, system integration and
+      software architecture across complex enterprise environments.</p>
+
+      <p>Proven track record in modernizing legacy platforms, implementing composable and cloud-native architectures and
+        serving as a technical liaison between business, product and engineering stakeholders.</p>
+
+      <h2>Work Experience</h2>
+
+      <h3>Software Engineer, De'Longhi Group (Jun 2021 - now)</h3>
+      <ul>
+        <li>Played a key role in the <strong>strategic transition from SAP CC (Hybris) monolithic ecommerce to a
+            composable Salesforce Commerce Cloud PWA architecture</strong>, significantly reducing infrastructure and
+          external consultancy dependency.</li>
+        <li>Contributed to talent acquisition and development by participating in hiring decisions and mentoring both
+          junior and senior engineers.</li>
+        <li>Led the <strong>accessibility improvement initiative</strong> for the ecommerce frontend ensuring compliance
+          with
+          <strong>WCAG guidelines</strong>.
+        </li>
+        <li>Took ownership of the adoption of <strong>Google Cloud Platform</strong> for developing business-critical
+          web
+          applications.
+        </li>
+      </ul>
+
+      <h3>Software Engineer, Pixartprinting (Jun 2016 - May 2021)</h3>
+      <ul>
+        <li>Pioneered <strong>Packstyle Srl</strong>, an internal startup initiative, developing a new ERP from
+          scratch
+          based on the <strong>Domain-Driven Design (DDD) principles</strong> and launching a Shopify-based
+          ecommerce.</li>
+        <li>Contributed to the <strong>migration from a PHP/MySQL monolithic system to a cloud-based composable
+            architecture on
+            AWS</strong>, significantly enhancing maintainability and scalability.</li>
+      </ul>
+
+      <h3>Software Engineer, NTT Data (Jun 2008 - Jun 2016)</h3>
+      <ul>
+        <li>Led frontend development for <strong>Vodafone Diamond</strong>, transforming spreadsheet-based workflows
+          into a
+          <strong>modular AngularJS web application</strong> used across multiple teams.
+        </li>
+        <li>Mentored junior developers, fostering technical grow and best practices.</li>
+        <li>Delivered multiple iOS <strong>native and cross platform mobile applications</strong>.</li>
+      </ul>
+
+      <h3>Freelance Graphic Designer and Webmaster (Before 2010)</h3>
+      <ul>
+        <li>Designed visual assets (logos, flyers, CD covers) and developed websites for small businesses.</li>
+      </ul>
     </div>
-    <p class="privacy">In compliance with the GDPR and the Italian Legislative Decree no. 196 dated 30/06/2003, I
-      hereby authorize
-      you to use and process my personal details contained in this document.</p>
+  </div>
+
+  <div class="page">
+    <div class="subpage">
+
+      <h2>Skills</h2>
+
+      <h3>Frontend &amp; User Experience</h3>
+      <p>Extensive experience building <strong>web components and Progressive Web Applications using React, Javascript
+          and Node.js</strong>,
+        translating <strong>Figma prototypes</strong> into production-ready interfaces.</p>
+
+      <h3>Backend, APIs &amp; Integration</h3>
+      <p>Hands-on experience in designing and deploying <strong>production-grade APIs</strong> and services,
+        across multiple languages and ecosystems (<strong>Node.js, Go, Java, PHP</strong>), with strong emphasis on
+        system
+        integrations and long-term maintainability.</p>
+
+      <h3>Cloud &amp; Platform Architecture</h3>
+      <p>Proven experience working with <strong>AWS and GCP</strong>, contributing to the transition from monolithic
+        systems to <strong>cloud-native and composable architectures</strong>.</p>
+
+      <h3>Infrastructure &amp; Delivery</h3>
+      <p>Solid understanding of <strong>CI/CD pipelines, containerization and development workflows</strong>, using
+        tools such as Docker, Git, GitHub Actions and Webpack to ensure reliable and repeatable production deployments.
+      </p>
+
+      <h3>Leadership &amp; Methodologies</h3>
+      <p><strong>Scrum Master certified</strong>, confident in working indipendently or within a team or leading it,
+        consistently meeting deadlines through effective use of project management tools including <strong>Jira and
+          Confluence</strong>.</p>
+
+      <h2>Education</h2>
+
+      <ul>
+        <li>Bachelor’s Degree in <strong>Computer Science, Università Ca’ Foscari</strong></li>
+        <li>High School Diploma, <strong>Liceo Scientifico G.Galilei</strong></li>
+      </ul>
+
+      <h2>Certifications</h2>
+
+      <ul>
+        <li>Speexx English CEFR Level B2.1 (<a target="_blank"
+            href="https://portal.speexx.com/certificate/NjgxODk2Mjo6ODE=">Speexx</a>)</li>
+        <li>PSM I (<a target="_blank"
+            href="https://www.scrum.org/certification-list?AssessmentName=PSM%20I&l=Talon">Scrum.org</a>)</li>
+      </ul>
+
+      <!-- <p class="privacy">In compliance with the GDPR and the Italian Legislative Decree no. 196 dated 30/06/2003, I hereby authorize you to use and process my personal details contained in this document.</p> -->
+
+    </div>
   </div>
 </body>
 
